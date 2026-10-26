@@ -1,0 +1,32 @@
+H:\python\lesson1\server.py:104: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("shutdown")
+INFO:     Started server process [45276]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8000): [winerror 10048] only one usage of each socket addresINFO:     127.0.0.1:65249 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51797 - "GET /openapi.json HTTP/1.1" 200 OK
+--- SafeAI error ---
+Type: InternalServerError
+Message: Error code: 500 - {'error': 'Content blocked By SafeAI Filter: blocked-by-llm'}
+HTTP status: 500
+Headers: {'server': 'nginx/1.18.0 (Ubuntu)', 'date': 'Mon, 19 Oct 2026 13:33:28 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '60', 'connection': 'keep-alive', 'x-powered-by': 'Express', 'vary': 'Origin', 'access-control-allow-credentials': 'true', 'x-budget-limit': '1.00', 'x-budget-remaining': '0.9263', 'x-budget-used': '0.0737', 'x-ratelimit-limit-minute': '60', 'x-ratelimit-remaining-minute': '60', 'x-ratelimit-limit-day': '10000', 'x-ratelimit-remaining-day': '9988', 'etag': 'W/"3c-/tUM7CyYshEaqGZbJ6Uu5HHsJM0"'}
+Body: {"error":"Content blocked By SafeAI Filter: blocked-by-llm"}
+--------------------
+INFO:     127.0.0.1:64252 - "POST /generate HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:63718 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57714 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59717 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58632 - "OPTIONS /generate HTTP/1.1" 200 OK
+--- SafeAI error ---
+Type: InternalServerError
+Message: Error code: 500 - {'error': 'Content blocked By SafeAI Filter: blocked-by-llm'}
+HTTP status: 500
+Headers: {'server': 'nginx/1.18.0 (Ubuntu)', 'date': 'Mon, 19 Oct 2026 13:40:26 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '60', 'connection': 'keep-alive', 'x-powered-by': 'Express', 'vary': 'Origin', 'access-control-allow-credentials': 'true', 'x-budget-limit': '1.00', 'x-budget-remaining': '0.9253', 'x-budget-used': '0.0747', 'x-ratelimit-limit-minute': '60', 'x-ratelimit-remaining-minute': '60', 'x-ratelimit-limit-day': '10000', 'x-ratelimit-remaining-day': '9985', 'etag': 'W/"3c-/tUM7CyYshEaqGZbJ6Uu5HHsJM0"'}
+Body: {"error":"Content blocked By SafeAI Filter: blocked-by-llm"}
+--------------------
+INFO:     127.0.0.1:58632 - "POST /generate HTTP/1.1" 500 Internal Server Error
